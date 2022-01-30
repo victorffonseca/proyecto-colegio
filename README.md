@@ -2,11 +2,13 @@
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_Clona el siguiente repositorio para obtener una copia del proyecto en funcionamiento en tu máquina local._
 
 ```
 git clone https://github.com/victorffonseca/proyecto-colegio-back.git
 ```
+
+### Instalación 🔧
 
 Una vez clonado el repositorio, importar con el IDE de preferencia y ejecutar localmente. La app estará expuesta en la URL:
 
