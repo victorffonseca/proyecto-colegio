@@ -1,10 +1,13 @@
 package com.victor.colegio.service;
 
 import com.victor.colegio.entity.Asignatura;
-import com.victor.colegio.entity.Profesor;
 
 import java.util.List;
 import java.util.Optional;
+
+/**
+ * Autor: Víctor Fonseca
+ */
 
 public interface AsignaturaService {
     List<Asignatura> obtenerAsignaturas();

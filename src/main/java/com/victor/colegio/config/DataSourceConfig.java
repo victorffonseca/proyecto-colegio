@@ -9,6 +9,10 @@ import org.springframework.jdbc.datasource.init.DatabasePopulatorUtils;
 import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.stereotype.Component;
 
+/**
+ * Autor: Víctor Fonseca
+ */
+
 @Component
 public class DataSourceConfig {
 
@@ -16,7 +20,7 @@ public class DataSourceConfig {
     public DriverManagerDataSource datasource() {
         DriverManagerDataSource datasource = new DriverManagerDataSource();
         datasource.setDriverClassName("org.h2.Driver");
-        datasource.setUrl("jdbc:h2:D:/Desarrollo/proyecto-colegio-back/colegio_db");
+        datasource.setUrl("jdbc:h2:~/Downloads/proyecto-colegio-db/colegio-db");
         datasource.setUsername("sa");
         datasource.setPassword("P@ssw0rd01");
 

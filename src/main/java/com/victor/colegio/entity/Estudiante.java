@@ -1,6 +1,5 @@
 package com.victor.colegio.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -10,6 +9,10 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
+
+/**
+ * Autor: Víctor Fonseca
+ */
 
 @Entity
 @Table(name = "estudiante")
