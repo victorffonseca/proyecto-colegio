@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 /**
  * Autor: Víctor Fonseca
@@ -26,15 +25,12 @@ public class AsignaturaServiceImpl implements AsignaturaService {
     }
 
     @Override
-    public List<Asignatura> obtenerAsignaturasPorProfesor(Long id) {
-        return obtenerAsignaturas()
-                .stream()
-                .filter(asignatura -> asignatura.getProfesor().getId().equals(id))
-                .collect(Collectors.toList());
+    public Optional<Asignatura> obtenerAsignaturaPorId(Long id) {
+        return asignaturaRepository.findById(id);
     }
 
     @Override
-    public Optional<Asignatura> obtenerAsignaturaPorId(Long id) {
-        return asignaturaRepository.findById(id);
+    public List<Asignatura> obtenerAsignaturasPorProfesor(Long id) {
+        return asignaturaRepository.obtenerAsignaturasPorProfesor(id);
     }
 }
