@@ -11,7 +11,7 @@
 	<groupId>com.victor</groupId>
 	<artifactId>proyecto-colegio</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>proyecto-colegio</name>
 	<description>Proyecto colegio</description>
 	<properties>
